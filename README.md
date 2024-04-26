@@ -2,7 +2,7 @@
 
 *Introduction*
 
-In an era marked by unprecedented digital communication, understanding human emotions through natural language has become pivotal. This project aims to delve into the realm of Emotion Analysis using Natural Language Processing (NLP). By harnessing advanced computational techniques, we seek to unravel the intricate nuances of human sentiment expressed in textual data. Through this endeavor, we aspire to equip machines with the ability to comprehend and respond to human emotions effectively. Leveraging state-of-the-art NLP algorithms, we endeavor to develop robust models capable of accurately detecting and categorizing emotions expressed in diverse textual contexts. Ultimately, this project aims to contribute to fields such as sentiment analysis, customer feedback analysis, mental health monitoring, and personalized user experiences. Through interdisciplinary collaboration between linguistics, psychology, and computer science, we embark on a journey to decipher the language of emotions in the digi*tal age.
+In an era marked by unprecedented digital communication, understanding human emotions through natural language has become pivotal. This project aims to delve into the realm of Emotion Analysis using Natural Language Processing (NLP). By harnessing advanced computational techniques, we seek to unravel the intricate nuances of human sentiment expressed in textual data. Through this endeavor, we aspire to equip machines with the ability to comprehend and respond to human emotions effectively. Leveraging state-of-the-art NLP algorithms, we endeavor to develop robust models capable of accurately detecting and categorizing emotions expressed in diverse textual contexts. Ultimately, this project aims to contribute to fields such as sentiment analysis, customer feedback analysis, mental health monitoring, and personalized user experiences. Through interdisciplinary collaboration between linguistics, psychology, and computer science, we embark on a journey to decipher the language of emotions in the digital age.
 
 
 *Problem Statement*
@@ -39,30 +39,26 @@ Kaggle Emotion Dataset for Emotion Recognition Tasks:
 •	TF-IDF Vectorization: Converted preprocessed text into TF-IDF vectors for model training.
 
 4.	Model Selection and Training
-•	Trained multiple classifiers including Logistic Regression, Decision Tree, Random Forest, K Nearest Neighbors, SVM, and Naive Bayes.
+•	Trained multiple classifiers including Logistic Regression, Decision Tree, Random Forest, K Nearest Neighbors, SVM, Naive Bayes, MultiLayer Perceptron(MLP), and Recurrent Neural Network(RNN) with LSTM.
 •	Split the data into training and testing sets (80/20 ratio).
-•	Evaluated models using classification metrics like precision, recall, and F1-score.
+•	Evaluated models using classification metrics like accuracy, precision, recall, and F1-score.
 
 5.	Model Evaluation
 •	Evaluated each model's performance on the test set using classification reports.
 •	Identified the best-performing models based on accuracy and other metrics.
 
 6.	Hyperparameter Tuning
-•	Conducted hyperparameter tuning using GridSearchCV for selected classifiers to optimize model performance.
+•	Conducted hyperparameter tuning using GridSearchCV for traditional ML classifiers to optimize model performance.
 
 7.	Model Saving
 •	Saved the trained model using joblib for potential deployment.
 
-8.	Flask App for user input
+8.	Interactive CLI for user input
 •	It can take text input from user and predict the emotion related to it.
 
 
 Libraries Used:
-NumPy: Essential for numerical operations and data manipulation.
-NLTK: Supports text preprocessing and sentiment analysis for emotion tasks.
-Pandas: Facilitates efficient data handling and preprocessing.
-Matplotlib: Enables visualization of model performance and emotional trends.
-Scikit-Learn: Supports predictive data analysis of dataset.
+NLTK, NumPy, Pandas, Matplotlib, Scikit-Learn, Tensorflow and Keras.
 
 
 *Results*
@@ -82,7 +78,7 @@ Naive Bayes: No hyperparameters to tune
 
 In conclusion, the journey through the realm of emotion analysis using Natural Language Processing (NLP) has been both insightful and rewarding. Through the lens of advanced computational techniques, we've delved into the intricate nuances of human emotions expressed through text, uncovering patterns, sentiments, and underlying meanings.
 
-The application of logistic regression, a powerful machine learning algorithm, has played a pivotal role in our endeavor. With an impressive accuracy of 86%, it has demonstrated its efficacy in accurately categorizing and predicting emotions from textual data. This success underscores the potential of leveraging NLP and machine learning methodologies in understanding and interpreting human emotions at scale.
+The application of RNN with LSTM, a powerful machine learning algorithm, has played a pivotal role in our endeavor. With an impressive accuracy of 91%, it has demonstrated its efficacy in accurately categorizing and predicting emotions from textual data. This success underscores the potential of leveraging NLP and machine learning methodologies in understanding and interpreting human emotions at scale.
 
 In essence, this project serves as a testament to the transformative power of NLP in decoding the intricate tapestry of human emotions. With each advancement, we inch closer to a deeper understanding of ourselves and the world around us, paving the way for a more empathetic and interconnected future.
 
