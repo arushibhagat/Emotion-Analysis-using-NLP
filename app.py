@@ -20,7 +20,7 @@ if st.button("Analyze Emotion"):
         try:
             # Tokenize the input text before passing it to the model
             tokenized_input = tokenizer.texts_to_sequences([user_input])
-            padded_input = tokenizer.pad_sequences(tokenized_input, padding='post')
+            padded_input = pad_sequences(tokenized_input, padding='post')
 
             # Predict the emotion from the model
             prediction = model.predict(padded_input)  # Ensure model is expecting tokenized and padded input
