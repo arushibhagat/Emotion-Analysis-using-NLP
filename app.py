@@ -1,21 +1,20 @@
 import streamlit as st
-import pickle
+import joblib
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences 
 import numpy as np
-from joblib import load
 
 # Load the model and tokenizer
 with open('emotion_classifier_model.pkl', 'rb') as file:
-    model = load(file)
+    model = joblib.load(file)
 with open('tokenizer.pkl', 'rb') as file:
-    tokenizer = pickle.load(file)
+    tokenizer = joblib.load(file)
 
 # Emotion Labels
 emotion_labels = ['Sadness', 'Joy', 'Love', 'Anger', 'Fear', 'Surprise']
 
 st.title("Emotion Analysis App")
-
+st.sidebar.write("Developed by: Arushi Bhagat")
 user_input = st.text_area("Enter the text to analyze the emotion:")
 
 if st.button("Analyze Emotion"):
