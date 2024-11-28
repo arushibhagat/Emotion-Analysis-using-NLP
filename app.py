@@ -1,5 +1,8 @@
 import streamlit as st
 import pickle
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences 
+
 from joblib import load
 
 # Load the model and tokenizer
