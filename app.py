@@ -2,7 +2,7 @@ import streamlit as st
 from joblib import load
 
 # Load the model
-with open('path_to_your_model.pkl', 'rb') as file:
+with open('emotion_classifier_model.pkl', 'rb') as file:
     model = load(file)
 
 st.title("Emotion Analysis App")
