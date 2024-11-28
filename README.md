@@ -1,5 +1,7 @@
 # Emotion-Analysis-using-NLP
 
+Streamlit Deployed: https://emotion-analysis-using-nlp.streamlit.app
+
 *Introduction*
 
 In an era marked by unprecedented digital communication, understanding human emotions through natural language has become pivotal. This project aims to delve into the realm of Emotion Analysis using Natural Language Processing (NLP). By harnessing advanced computational techniques, we seek to unravel the intricate nuances of human sentiment expressed in textual data. Through this endeavor, we aspire to equip machines with the ability to comprehend and respond to human emotions effectively. Leveraging state-of-the-art NLP algorithms, we endeavor to develop robust models capable of accurately detecting and categorizing emotions expressed in diverse textual contexts. Ultimately, this project aims to contribute to fields such as sentiment analysis, customer feedback analysis, mental health monitoring, and personalized user experiences. Through interdisciplinary collaboration between linguistics, psychology, and computer science, we embark on a journey to decipher the language of emotions in the digital age.
