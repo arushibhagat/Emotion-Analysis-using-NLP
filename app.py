@@ -33,7 +33,7 @@ if st.button("Analyze Emotion"):
             predicted_index = np.argmax(prediction)  # Get the index of the highest probability
             predicted_emotion = emotion_labels[predicted_index]  # Map the index to the emotion label
 
-            st.write("Predicted Emotion:", prediction[0])
+            st.write(f"Predicted Emotion: {predicted_emotion}")
         except Exception as e:
             st.error(f"Error in prediction: {str(e)}")
     else:
